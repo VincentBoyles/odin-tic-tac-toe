@@ -1,6 +1,7 @@
-require_relative 'lib/game/board'
-require_relative 'lib/game/crosses'
-require_relative 'lib/game/noughts'
+require 'pry-byebug'
+require 'colorize'
 
-require_relative 'lib/players/computer'
-require_relative 'lib/players/person'
+require_relative 'lib/game'
+
+new_game = Game.new
+new_game.game_start
