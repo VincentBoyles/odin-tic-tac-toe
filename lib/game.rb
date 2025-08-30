@@ -51,5 +51,6 @@ class Game
     end
     puts "#{player1.name} wins!" if gameboard.check_winner(player1.piece)
     puts "#{player2.name} wins!" if gameboard.check_winner(player2.piece)
+    puts gameboard.show_board
   end
 end
