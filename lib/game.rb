@@ -14,7 +14,7 @@ class Game
     register_players
     gameboard = Board.new
     loop do
-      gameboard.place_piece(player1.piece)
+      gameboard.human_place_piece(player1.piece)
       puts "#{player1.name}'s turn" + gameboard.show_board
       break if gameboard.check_winner(player1.piece)
 
